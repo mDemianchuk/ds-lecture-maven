@@ -171,7 +171,6 @@ mvn archetype:generate
 ~~~
 
 The *groupId* coordinate specifies the group, company, or individual that created a project. This identifier should follow [Java's package name rules](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7), which means it should start with a reversed company domain. For example, `org.apache.maven`, `org.apache.commons`. However, Maven does not enforse this rule.
-https://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 The base package name used in the project is specified by *artifactId*. The only restriction that applies to this identifier is that it should be lowercase.
 
@@ -276,7 +275,6 @@ The list of Apache Ant most important features is shown below:
 [![alt text](images/gradle-logo.png)](https://gradle.org/)
 
 **Gradle** is an open-source build automation tool that follows the concepts of [Apache Maven](#apache-maven) and [Apache Ant](#apache-ant). However, unlike those build tools, Gradle uses a Groovy-based domain-specific language instead of the XML form for the project configuration.
-https://en.wikipedia.org/wiki/Gradle
 
 #### Gradle Key Advantages
 Some of the most noteworthy advantages of Gradle build tool are listed below:
@@ -294,3 +292,10 @@ Some of the most noteworthy advantages of Gradle build tool are listed below:
 - Stopping, deploying, and restarting server apps in different environments
 
 ## Citations
+- *Maven – Introduction*, maven.apache.org/what-is-maven.html
+- *The Central Repository Search Engine*, search.maven.org/classic/
+- *Maven – Available Plugins*, maven.apache.org/plugins/
+- *Maven – Guide to Naming Conventions*, maven.apache.org/guides/mini/guide-naming-conventions.html
+- “Welcome.” *Apache Ant - Welcome*, ant.apache.org/
+- “Gradle Features.” *Gradle*, gradle.org/features/
+- “Gradle.” *Wikipedia*, Wikimedia Foundation, 11 Apr. 2019, en.wikipedia.org/wiki/Gradle
