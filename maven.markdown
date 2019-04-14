@@ -1,8 +1,6 @@
 ## Java Build Tools
 Build tools are programs that automate the creation of executable applications from source code.
 
-`TODO: add more content`
-
 Typical Java project consists of such tasks:
 - Retrieving and resolving dependencies
 - Adding necessary jars to a classpath
@@ -28,10 +26,8 @@ Some of the [other build tools](#other-build-tools) which dominated the JVM ecos
 [![alt text](images/maven-logo.png)](https://maven.apache.org/)
 
 **Apache Maven** is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting, and documentation from a central piece of information.
-https://maven.apache.org/
 
 Apache Maven automates build tasks to minimize the risk of human error while building the software manually.
-
 
 ### Maven Key Advantages
 - **Easy project setup:** With Maven, users have an ability to create a project from a template (also known as an archetype). It reduces an overhead with manual configuration of a project and eliminates human error.
@@ -92,9 +88,9 @@ A combination of *groupId*, *artifactId*, and *version* defines the unique ident
 Dependencies represent external libraries that the project is dependent on. This Maven feature automatically downloads those external jars from a remote repository in case a user does not have them in the local repository.
 
 Dependencies provide the following benefits:
-- less storage usage by eliminating unnecessary downloads from remote repositories
-- significantly faster project's builds
-- an efficient mechanism for managing and exchanging artifacts within a group or company (those artifacts need to be built from source only once)
+- Less storage usage by eliminating unnecessary downloads from remote repositories
+- Significantly faster project's builds
+- An efficient mechanism for managing and exchanging artifacts within a group or company (those artifacts need to be built from source only once)
 
 If a project is dependent on an external library, a user needs to specify the *groupId*, *artifactId*, and the *version* of this artifact. An example is seen below:
 
@@ -253,7 +249,7 @@ The following command will execute the application:
 ### Apache Ant
 [![alt text](images/ant-logo.png)](https://ant.apache.org/)
 
-**Apache Ant** is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
+**Apache Ant** is a Java build automation tool that follows rules described in configuration files to build and deploy applications. Ant provides a wide variety of default tasks allowing to compile, assemble, test and run Java programs. In addition to that, Ant is compatible with non Java applications, for example C or C++ applications.
 
 
 #### Ant Key Advantages
@@ -263,13 +259,13 @@ The following command will execute the application:
 
 #### Ant Features
 The list of Apache Ant most important features is shown below:
-- compilation of Java-based applications
-- generation of Java Doc
-- packaging into war, jar, zip, tar files
-- support for JUnit 3, Junit 4, TestNG etc.
-- conversion of XML test reports to HTML reports
-- checking out from version control system (SVN, GIT, CVS etc).
-- execution of test scripts and test suites
+- Compilation of Java-based applications
+- Generation of Java Doc
+- Packaging into war, jar, zip, tar files
+- Support for JUnit 3, Junit 4, TestNG etc.
+- Conversion of XML test reports to HTML reports
+- Checking out from version control system (SVN, GIT, CVS etc).
+- Execution of test scripts and test suites
 
 ### Gradle
 [![alt text](images/gradle-logo.png)](https://gradle.org/)
@@ -292,10 +288,10 @@ Some of the most noteworthy advantages of Gradle build tool are listed below:
 - Stopping, deploying, and restarting server apps in different environments
 
 ## Citations
-- *Maven – Introduction*, maven.apache.org/what-is-maven.html
-- *The Central Repository Search Engine*, search.maven.org/classic/
-- *Maven – Available Plugins*, maven.apache.org/plugins/
-- *Maven – Guide to Naming Conventions*, maven.apache.org/guides/mini/guide-naming-conventions.html
-- “Welcome.” *Apache Ant - Welcome*, ant.apache.org/
-- “Gradle Features.” *Gradle*, gradle.org/features/
-- “Gradle.” *Wikipedia*, Wikimedia Foundation, 11 Apr. 2019, en.wikipedia.org/wiki/Gradle
+- *Maven – Introduction*, [maven.apache.org/what-is-maven.html](https://maven.apache.org/what-is-maven.html)
+- *The Central Repository Search Engine*, [search.maven.org/classic/](https://search.maven.org/classic/)
+- *Maven – Available Plugins*, [maven.apache.org/plugins/](https://maven.apache.org/plugins/)
+- *Maven – Guide to Naming Conventions*, [maven.apache.org/guides/mini/guide-naming-conventions.html](https://maven.apache.org/guides/mini/guide-naming-conventions.html)
+- “Welcome.” *Apache Ant - Welcome*, [ant.apache.org/](https://ant.apache.org/)
+- “Gradle Features.” *Gradle*, [gradle.org/features/](https://gradle.org/features/)
+- “Gradle.” *Wikipedia*, Wikimedia Foundation, 11 Apr. 2019, [en.wikipedia.org/wiki/Gradle](https://en.wikipedia.org/wiki/Gradle)
