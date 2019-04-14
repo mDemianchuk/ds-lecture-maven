@@ -21,12 +21,8 @@ The advantages of utilizing build tools in Java projects include:
 
 
 ### Variety of Java Build Tools
-The main focus of this lecture is [Apache Maven](#apache-maven).
-
-However, there is a variety of build tools for Java projects available:
-- [Apache Ant](#apache-ant)
-- [Gradle](#gradle)
-- [Jerkar](#jerkar)
+There is a wide varierty of open source Java build tools available. However, in this lecture we will mainly focus on [Apache Maven](#apache-maven).
+Some of the [other build tools](#other-build-tools) which dominated the JVM ecosystem are [Apache Ant](#apache-ant) and [Gradle](#gradle).
 
 ## Apache Maven
 [![alt text](images/maven-logo.png)](https://maven.apache.org/)
@@ -296,14 +292,5 @@ Some of the most noteworthy advantages of Gradle build tool are listed below:
 - Running functional/integration tests that require special setup
 - Automatically updating source control management (SCM) information, such as tags
 - Stopping, deploying, and restarting server apps in different environments
-
-### Jerkar
-[![alt text](images/jerkar-logo.png)](http://project.jerkar.org/)
-
-**Jerkar** is a complete Java build system such as [Apache Maven](#apache-maven), [Apache Ant](#apache-ant), or [Gradle](#gradle) for automation of the tasks. The main benefit Java developers might find in Jerkar is that it uses pure Java code: no XML or scripts involved.
-
-#### Jerkar Key Advantages
-
-#### Jerkar Features
 
 ## Citations
