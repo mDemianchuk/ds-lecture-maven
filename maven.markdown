@@ -21,13 +21,15 @@ The advantages of utilizing build tools in Java projects include:
 
 
 ### Variety of Java Build Tools
-The most widely used build tools for Java projects:
-- [Apache Maven](#apache-maven)
+The main focus of this lecture is [Apache Maven](#apache-maven).
+
+However, there is a variety of build tools for Java projects available:
+- [Apache Ant](#apache-ant)
 - [Gradle](#gradle)
-- [Other build tools](#other-build-tools)
+- [Jerkar](#jerkar)
 
 ## Apache Maven
-![alt text](images/maven-logo.png)
+[![alt text](images/maven-logo.png)](https://maven.apache.org/)
 
 **Apache Maven** is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting, and documentation from a central piece of information.
 https://maven.apache.org/
@@ -251,12 +253,46 @@ The following command will execute the application:
 
 `mvn exec:java`
 
-## Gradle
-![alt text](images/gradle-logo.png)
-
 ## Other Build Tools
-Other available Java build tools:
-- [Apache Ant](https://ant.apache.org/)
-- [Jerkar](http://project.jerkar.org/)
+
+### Apache Ant
+[![alt text](images/ant-logo.png)](https://ant.apache.org/)
+
+**Apache Ant** is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
+
+
+#### Ant’s Key Advantages
+- **Ease of use:** The tool provides a wide range of tasks that almost fulfils all the build requirements of the user.
+- **Platform independent:** Since Ant is written in Java, it is a platform-independent build tool. However, the only requirement for the tool is JDK.
+- **Extensibility:** A user can easily extend Ant's capabilities by writing custom tasks in Ant Libs, since it is written in Java and its source code is freely available.
+
+#### Ant’s Features
+The list of Apache Ant most important features is shown below:
+- compilation of Java-based applications
+- generation of Java Doc
+- packaging into war, jar, zip, tar files
+- support for JUnit 3, Junit 4, TestNG etc.
+- conversion of XML test reports to HTML reports
+- checking out from version control system (SVN, GIT, CVS etc).
+- execution of test scripts and test suites
+
+### Gradle
+[![alt text](images/gradle-logo.png)](https://gradle.org/)
+
+**Gradle** is an open-source build automation tool that follows the concepts of [Apache Maven](#apache-maven) and [Apache Ant](#apache-ant). However, unlike Maven, Gradle uses a Groovy-based domain-specific language instead of the XML form for the project configuration.
+https://en.wikipedia.org/wiki/Gradle
+
+#### Gradle's Key Advantages
+
+#### Gragle's Features
+
+### Jerkar
+[![alt text](images/jerkar-logo.png)](http://project.jerkar.org/)
+
+**Jerkar** is a complete Java build system such as [Apache Maven](#apache-maven), [Apache Ant](#apache-ant), or [Gradle](#gradle) for automation of the tasks. The main benefit Java developers might find in Jerkar is that it uses pure Java code: no XML or scripts involved.
+
+#### Jerkar’s Key Advantages
+
+#### Jerkar Features
 
 ## Citations
