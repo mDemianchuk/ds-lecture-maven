@@ -37,7 +37,7 @@ https://maven.apache.org/
 Apache Maven automates build tasks to minimize the risk of human error while building the software manually.
 
 
-### Maven's key advantages
+### Maven Key Advantages
 - **Easy project setup:** With Maven, users have an ability to create a project from a template (also known as an archetype). It reduces an overhead with manual configuration of a project and eliminates human error.
 
 - **Extensibility:** With Maven, users have an ability to easily write plugins in Java or scripting languages.
@@ -93,7 +93,7 @@ In order to uniquely identify a project and specify its packaging, Maven uses a 
 A combination of *groupId*, *artifactId*, and *version* defines the unique identifier for the project. This set of coordinates allows a user to specify which versions of external libraries will be utilized in the project.
 
 #### Dependencies
-Dependencies represent external libraries that the project is dependent on. This Maven's feature automatically downloads those external jars from a remote repository in case a user does not have them in the local repository.
+Dependencies represent external libraries that the project is dependent on. This Maven feature automatically downloads those external jars from a remote repository in case a user does not have them in the local repository.
 
 Dependencies provide the following benefits:
 - less storage usage by eliminating unnecessary downloads from remote repositories
@@ -116,7 +116,7 @@ In Maven, a repository stores built dependencies and artifacts of various types.
 When resolving dependencies, Maven checks for plugins and artifacts in the local repository. In case they are not available there, it downloads them from a remote cenral repository, such as [Maven Central](https://search.maven.org/classic/) and saves them in the local repository.
 
 #### Build
-Even though Maven's *build* is one of the optional sections of the *POM*, it provides a variety of project's configurations. In this section a user can set the default Maven *goal*, specify the folder for compiled artifacts (by default named *target*), and define the project's final name. An example of the *build* section is shown below:
+Even though Maven *build* is one of the optional sections of the *POM*, it provides a variety of project's configurations. In this section a user can set the default Maven *goal*, specify the folder for compiled artifacts (by default named *target*), and define the project's final name. An example of the *build* section is shown below:
 
 ~~~
 <build>
@@ -148,7 +148,7 @@ The list of the most important lifecycle phases:
 
 A Maven *plugin* is a collection of one or more *goals*. *Goals* are executed in *phases*, which helps to determine the order in which the *goals* are executed.
 
-The full list of officially supported plugins can be found on [Maven's website](https://maven.apache.org/plugins/).
+The full list of officially supported plugins can be found on [Maven website](https://maven.apache.org/plugins/).
 
 A command to execute a *lifecycle phase* (including all of the prior *phases*) is shown below:
 
@@ -261,12 +261,12 @@ The following command will execute the application:
 **Apache Ant** is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. The main known usage of Ant is the build of Java applications. Ant supplies a number of built-in tasks allowing to compile, assemble, test and run Java applications. Ant can also be used effectively to build non Java applications, for instance C or C++ applications. More generally, Ant can be used to pilot any type of process which can be described in terms of targets and tasks.
 
 
-#### Ant’s Key Advantages
+#### Ant Key Advantages
 - **Ease of use:** The tool provides a wide range of tasks that almost fulfils all the build requirements of the user.
 - **Platform independent:** Since Ant is written in Java, it is a platform-independent build tool. However, the only requirement for the tool is JDK.
 - **Extensibility:** A user can easily extend Ant's capabilities by writing custom tasks in Ant Libs, since it is written in Java and its source code is freely available.
 
-#### Ant’s Features
+#### Ant Features
 The list of Apache Ant most important features is shown below:
 - compilation of Java-based applications
 - generation of Java Doc
@@ -279,19 +279,30 @@ The list of Apache Ant most important features is shown below:
 ### Gradle
 [![alt text](images/gradle-logo.png)](https://gradle.org/)
 
-**Gradle** is an open-source build automation tool that follows the concepts of [Apache Maven](#apache-maven) and [Apache Ant](#apache-ant). However, unlike Maven, Gradle uses a Groovy-based domain-specific language instead of the XML form for the project configuration.
+**Gradle** is an open-source build automation tool that follows the concepts of [Apache Maven](#apache-maven) and [Apache Ant](#apache-ant). However, unlike those build tools, Gradle uses a Groovy-based domain-specific language instead of the XML form for the project configuration.
 https://en.wikipedia.org/wiki/Gradle
 
-#### Gradle's Key Advantages
+#### Gradle Key Advantages
+Some of the most noteworthy advantages of Gradle build tool are listed below:
+- **Scalable and high-performance builds:** Project builds can be done in parallel to use resources more efficiently.
+- **Fully configurable project layout and lifecycle:** Gradle provides more flexibility than Maven in configuration of the default layour and lifecycle.
+- **Multi-module projects support:** A multi-project build in gradle consists of one root project, and one or more subprojects that may also have subprojects.
+- **Compatibility with Apache Maven and Apache Ant:** It provides the user an ability to integrate existing Maven or Ant project with Gradle.
 
-#### Gragle's Features
+#### Gragle Features
+- Creating a complete developer environment for a project from scratch
+- Generating a project’s documentation (possibly in multiple languages)
+- Running the application in a special developer mode
+- Running functional/integration tests that require special setup
+- Automatically updating source control management (SCM) information, such as tags
+- Stopping, deploying, and restarting server apps in different environments
 
 ### Jerkar
 [![alt text](images/jerkar-logo.png)](http://project.jerkar.org/)
 
 **Jerkar** is a complete Java build system such as [Apache Maven](#apache-maven), [Apache Ant](#apache-ant), or [Gradle](#gradle) for automation of the tasks. The main benefit Java developers might find in Jerkar is that it uses pure Java code: no XML or scripts involved.
 
-#### Jerkar’s Key Advantages
+#### Jerkar Key Advantages
 
 #### Jerkar Features
 
