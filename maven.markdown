@@ -19,7 +19,7 @@ The advantages of utilizing build tools in Java projects include:
 
 
 ### Variety of Java Build Tools
-There is a wide varierty of open source Java build tools available. However, in this lecture we will mainly focus on [Apache Maven](#apache-maven).
+There is a wide variety of open source Java build tools available. However, in this lecture, we will mainly focus on [Apache Maven](#apache-maven).
 Some of the [other build tools](#other-build-tools) which dominated the JVM ecosystem are [Apache Ant](#apache-ant) and [Gradle](#gradle).
 
 ## Apache Maven
@@ -30,13 +30,13 @@ Some of the [other build tools](#other-build-tools) which dominated the JVM ecos
 Unlike build automation tools widely used before like [Apache Ant](#apache-ant), Maven follows conventions for the build process, so users need to write only non-default configurations. Its core is represented by an XML file that describes the software project, the dependencies on other external libraries or APIs, the order in which the project is built, custom directories, and necessary plugins. It comes with a set of default tasks such as compilation of the source code and its packaging into artifacts.
 
 ### Maven Key Advantages
-- **Easy project setup:** With Maven, users have an ability to create a project from a template (also known as an archetype). It reduces an overhead with manual configuration of a project and eliminates human error.
+- **Easy project setup:** With Maven, users have an ability to create a project from a template (also known as an archetype). It reduces overhead with manual configuration of a project and eliminates human error.
 
 - **Extensibility:** With Maven, users have an ability to easily write plugins in Java or scripting languages.
 
 - **Dependency management:** Maven is capable of automatic updating, downloading, and validating the compatibility of the dependencies, as well as reporting the dependency closures (also known as transitive dependencies).
 
-- **Isolation between project dependencies and plugins:** In Maven project, the dependencies and plugins are retrieved from separate repositories, which reduces the number of conflicts when plugins require additional dependencies.
+- **Isolation between project dependencies and plugins:** In a Maven project, the dependencies and plugins are retrieved from separate repositories, which reduces the number of conflicts when plugins require additional dependencies.
 
 - **Central repository system:** Maven can either load the project dependencies from the local or remote central repository, such as [Maven Central](https://search.maven.org/classic/). It allows users of Maven to reuse JARs across projects and encourages communication between projects to ensure that issues with backward compatibility are dealt with.
 
@@ -90,7 +90,7 @@ Dependencies represent external libraries that the project is dependent on. This
 Dependencies provide the following benefits:
 - Less storage usage by eliminating unnecessary downloads from remote repositories
 - Significantly faster project's builds
-- An efficient mechanism for managing and exchanging artifacts within a group or company (those artifacts need to be built from source only once)
+- An efficient mechanism for managing and exchanging artifacts within a group or company (those artifacts need to be built from the source only once)
 
 If a project is dependent on an external library, a user needs to specify the *groupId*, *artifactId*, and the *version* of this artifact. An example is seen below:
 
@@ -105,10 +105,10 @@ If a project is dependent on an external library, a user needs to specify the *g
 ####  Repositories
 In Maven, a repository stores built dependencies and artifacts of various types. The default local repository can be found in the *.m2/repository* folder under the user's home directory.
 
-When resolving dependencies, Maven checks for plugins and artifacts in the local repository. In case they are not available there, it downloads them from a remote cenral repository, such as [Maven Central](https://search.maven.org/classic/) and saves them in the local repository.
+When resolving dependencies, Maven checks for plugins and artifacts in the local repository. In case they are not available there, it downloads them from a remote central repository, such as [Maven Central](https://search.maven.org/classic/) and saves them in the local repository.
 
 #### Build
-Even though Maven *build* is one of the optional sections of the *POM*, it provides a variety of project's configurations. In this section a user can set the default Maven *goal*, specify the folder for compiled artifacts (by default named *target*), and define the project's final name. An example of the *build* section is shown below:
+Even though Maven *build* is one of the optional sections of the *POM*, it provides a variety of project's configurations. In this section, a user can set the default Maven *goal*, specify the folder for compiled artifacts (by default named *target*), and define the project's final name. An example of the *build* section is shown below:
 
 ~~~
 <build>
@@ -131,7 +131,7 @@ The list of the most important lifecycle phases:
 - **compile** – compiles the source code into binary artifacts
 - **test** – executes unit tests
 - **package** – packages compiled code into an archive file such as *war*/*jar*/*zip*
-- **integration-test** – runs intgration tests
+- **integration-test** – runs integration tests
 - **verify** – validates the package
 - **install** – installs the package into the local repository
 - **deploy** – deploys the package to a remote server or repository
@@ -140,7 +140,7 @@ The list of the most important lifecycle phases:
 
 A Maven *plugin* is a collection of one or more *goals*. *Goals* are executed in *phases*, which helps to determine the order in which the *goals* are executed.
 
-The full list of officially supported plugins can be found on [Maven website](https://maven.apache.org/plugins/).
+The full list of officially supported plugins can be found on the [Maven website](https://maven.apache.org/plugins/).
 
 A command to execute a *lifecycle phase* (including all of the prior *phases*) is shown below:
 
@@ -166,7 +166,7 @@ mvn archetype:generate
   -DinteractiveMode=false
 ~~~
 
-The *groupId* coordinate specifies the group, company, or individual that created a project. This identifier should follow [Java's package name rules](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7), which means it should start with a reversed company domain. For example, `org.apache.maven`, `org.apache.commons`. However, Maven does not enforse this rule.
+The *groupId* coordinate specifies the group, company, or individual that created a project. This identifier should follow [Java's package name rules](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7), which means it should start with a reversed company domain. For example, `org.apache.maven`, `org.apache.commons`. However, Maven does not enforce this rule.
 
 The base package name used in the project is specified by *artifactId*. The only restriction that applies to this identifier is that it should be lowercase.
 
@@ -204,7 +204,7 @@ In order to compile our project, we need to run the following command:
 
 `mvn compile`
 
-Maven will execute every lifecycle phase prior to *compile* phase to generate the project's source files. To run only the *test* phase, we can execute the next command:
+Maven will execute every lifecycle phase prior to the *compile* phase to generate the project's source files. To run only the *test* phase, we can execute the next command:
 
 `mvn test`
 
@@ -249,22 +249,22 @@ The following command will execute the application:
 ### Apache Ant
 [![alt text](images/ant-logo.png)](https://ant.apache.org/)
 
-**Apache Ant** is a Java build automation tool that follows rules described in configuration files to build and deploy applications. Ant provides a wide variety of default tasks allowing to compile, assemble, test and run Java programs. In addition to that, Ant is compatible with non Java applications, for example C or C++ applications.
+**Apache Ant** is a Java build automation tool that follows rules described in configuration files to build and deploy applications. Ant provides a wide variety of default tasks allowing to compile, assemble, test and run Java programs. In addition to that, Ant is compatible with non-Java applications, for example, C or C++ applications.
 
 
 #### Ant Key Advantages
-- **Ease of use:** The tool provides a wide range of tasks that almost fulfils all the build requirements of the user.
+- **Ease of use:** The tool provides a wide range of tasks that almost fulfills all the build requirements of the user.
 - **Platform independent:** Since Ant is written in Java, it is a platform-independent build tool. However, the only requirement for the tool is JDK.
-- **Extensibility:** A user can easily extend Ant's capabilities by writing custom tasks in Ant Libs, since it is written in Java and its source code is freely available.
+- **Extensibility:** A user can easily extend Ant's capabilities by writing custom tasks in Ant Libs since it is written in Java and its source code is freely available.
 
 #### Ant Features
 The list of Apache Ant most important features is shown below:
 - Compilation of Java-based applications
 - Generation of Java Doc
 - Packaging into war, jar, zip, tar files
-- Support for JUnit 3, Junit 4, TestNG etc.
+- Support for JUnit 3, Junit 4, TestNG, etc.
 - Conversion of XML test reports to HTML reports
-- Checking out from version control system (SVN, GIT, CVS etc).
+- Checking out from a version control system (SVN, GIT, CVS, etc).
 - Execution of test scripts and test suites
 
 ### Gradle
@@ -273,17 +273,17 @@ The list of Apache Ant most important features is shown below:
 **Gradle** is an open-source build automation tool that follows the concepts of [Apache Maven](#apache-maven) and [Apache Ant](#apache-ant). However, unlike those build tools, Gradle uses a Groovy-based domain-specific language instead of the XML form for the project configuration.
 
 #### Gradle Key Advantages
-Some of the most noteworthy advantages of Gradle build tool are listed below:
+Some of the most noteworthy advantages of the Gradle build tool are listed below:
 - **Scalable and high-performance builds:** Project builds can be done in parallel to use resources more efficiently.
-- **Fully configurable project layout and lifecycle:** Gradle provides more flexibility than Maven in configuration of the default layour and lifecycle.
+- **Fully configurable project layout and lifecycle:** Gradle provides more flexibility than Maven in the configuration of the default layout and lifecycle.
 - **Multi-module projects support:** A multi-project build in gradle consists of one root project, and one or more subprojects that may also have subprojects.
-- **Compatibility with Apache Maven and Apache Ant:** It provides the user an ability to integrate existing Maven or Ant project with Gradle.
+- **Compatibility with Apache Maven and Apache Ant:** It provides the user with an ability to integrate existing Maven or Ant project with Gradle.
 
 #### Gragle Features
-- Creating a complete developer environment for a project from scratch
+- Creating a complete development environment for a project from scratch
 - Generating a project’s documentation (possibly in multiple languages)
 - Running the application in a special developer mode
-- Running functional/integration tests that require special setup
+- Running functional/integration tests that require a special setup
 - Automatically updating source control management (SCM) information, such as tags
 - Stopping, deploying, and restarting server apps in different environments
 
