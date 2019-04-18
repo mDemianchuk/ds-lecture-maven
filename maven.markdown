@@ -25,9 +25,9 @@ Some of the [other build tools](#other-build-tools) which dominated the JVM ecos
 ## Apache Maven
 [![alt text](images/maven-logo.png)](https://maven.apache.org/)
 
-**Apache Maven** is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting, and documentation from a central piece of information.
+**Apache Maven** is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting, and documentation from a central piece of information. Apache Maven automates build tasks to minimize the risk of human error while building the software manually.
 
-Apache Maven automates build tasks to minimize the risk of human error while building the software manually.
+Unlike build automation tools widely used before like [Apache Ant](#apache-ant), Maven follows conventions for the build process, so users need to write only non-default configurations. Its core is represented by an XML file that describes the software project, the dependencies on other external libraries or APIs, the order in which the project is built, custom directories, and necessary plugins. It comes with a set of default tasks such as compilation of the source code and its packaging into artifacts.
 
 ### Maven Key Advantages
 - **Easy project setup:** With Maven, users have an ability to create a project from a template (also known as an archetype). It reduces an overhead with manual configuration of a project and eliminates human error.
@@ -289,6 +289,7 @@ Some of the most noteworthy advantages of Gradle build tool are listed below:
 
 ## Citations
 - *Maven – Introduction*, [maven.apache.org/what-is-maven.html](https://maven.apache.org/what-is-maven.html)
+- “Apache Maven.” *Wikipedia*, Wikimedia Foundation, 17 Apr. 2019, [en.wikipedia.org/wiki/Apache_Maven](https://en.wikipedia.org/wiki/Apache_Maven)
 - *The Central Repository Search Engine*, [search.maven.org/classic/](https://search.maven.org/classic/)
 - *Maven – Available Plugins*, [maven.apache.org/plugins/](https://maven.apache.org/plugins/)
 - *Maven – Guide to Naming Conventions*, [maven.apache.org/guides/mini/guide-naming-conventions.html](https://maven.apache.org/guides/mini/guide-naming-conventions.html)
